@@ -11,7 +11,7 @@ namespace _5.CondicionalesAnidados
         static void Main(string[] args)
         {
 
-            int num1 = 0;
+            /*int num1 = 0;
             int num2 = 0;
             int num3 = 0;
 
@@ -21,7 +21,7 @@ namespace _5.CondicionalesAnidados
             Console.WriteLine("Ingrese el valor del número 2");
             num2=Int32.Parse(Console.ReadLine());
             Console.WriteLine("Ingrese el valor del número 3");
-            num3=Int32.Parse(Console.ReadLine());
+            num3=Int32.Parse(Console.ReadLine());*/
 
             /*if (num1 > num2)
             {
@@ -75,24 +75,31 @@ namespace _5.CondicionalesAnidados
             Console.WriteLine("Ingrese la calificación 3");
             nota3 = float.Parse(Console.ReadLine());
 
-            float promedio = (nota1 + nota2 + nota3) / 2f;
+            float promedio = (nota1 + nota2 + nota3) / 3f;
 
-            if (promedio <= 10)
+            if (promedio >= 0 && promedio <= 10)
             {
-                if (promedio < 9.5)
+                Console.WriteLine($"Su calificación promedio es: {promedio}");
+                if (promedio >= 9.5)
                 {
-                    if (promedio < 8.5 && promedio >= 7.5)
-                    {
-                        Console.WriteLine($"Su calificación promedio es: {promedio} Bien");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Su calificación promedio es: {promedio}");
-                    }
+                    Console.WriteLine("Excelente");
                 }
-
-                Console.WriteLine($"Su promedio es: {promedio} Excelente");
-
+                else if (promedio >= 8.5)
+                {
+                    Console.WriteLine("Bien");
+                }
+                else if (promedio >= 7.5)
+                {
+                    Console.WriteLine("Suficiente");
+                }
+                else
+                {
+                    Console.WriteLine("Insuficiente");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Error");
             }
         }
     }

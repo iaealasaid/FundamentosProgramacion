@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8B8768C7-120D-43CA-BEB4-ED9E1B0246C9}</ProjectGuid>
+    <ProjectGuid>{70D2FED6-8635-43B0-83C5-AE4A7B6211DD}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_3.CondicionalesDobles</RootNamespace>
     <AssemblyName>3.CondicionalesDobles</AssemblyName>
