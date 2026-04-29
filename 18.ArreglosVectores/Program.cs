@@ -37,7 +37,8 @@ namespace _18.ArreglosVectores
                 Console.WriteLine(numeros[i]);
             }*/
 
-            int[] numeros = new int[15];
+
+            /*int[] numeros = new int[15];
             int mayor = 0;
             int menor = 0;
             int[] posiciones = new int[2];
@@ -73,7 +74,34 @@ namespace _18.ArreglosVectores
                 Console.Write(numeros[i] + " | ");
             }
             Console.WriteLine($"\nEl número mayor es: {mayor} en la posición {posiciones[0] + 1}");
-            Console.WriteLine($"El número mayor es: {menor} en la posición {posiciones[1] + 1}");
+            Console.WriteLine($"El número mayor es: {menor} en la posición {posiciones[1] + 1}");*/
+
+
+            string[] palabras = new string[15];
+            string[] invertido = new string[15];
+
+            for (int i = 0; i < 15; i++)
+            {
+                Console.WriteLine($"Ingrese una palabra");
+                palabras[i] = Console.ReadLine();
+            }
+
+            for (int i = 0; i < 15; i++)
+            {
+                invertido[i] = palabras[14 - i];
+            }
+
+            Console.WriteLine("Arreglo original:");
+            for (int i = 0; i < 15; i++)
+            {
+                Console.Write(palabras[i] + "|");
+            }
+
+            Console.WriteLine("\nArreglo invertido:");
+            for (int i = 0; i < 15; i++)
+            {
+                Console.Write(invertido[i] + "|");
+            }
         }
     }
 }
