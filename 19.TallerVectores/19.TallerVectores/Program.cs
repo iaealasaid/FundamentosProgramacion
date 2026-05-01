@@ -183,32 +183,29 @@ namespace _19.TallerVectores
 
 
             /*Random rand = new Random();
+            int n1 = 0;
+            int n2 = 0;
 
-            // tamaños
             Console.WriteLine("Ingrese el tamaño del vector 1:");
-            int n1 = Int32.Parse(Console.ReadLine());
+            n1 = Int32.Parse(Console.ReadLine());
 
             Console.WriteLine("Ingrese el tamaño del vector 2:");
-            int n2 = Int32.Parse(Console.ReadLine());
+            n2 = Int32.Parse(Console.ReadLine());
 
-            // vectores
             int[] v1 = new int[n1];
             int[] v2 = new int[n2];
             int[] combinado = new int[n1 + n2];
 
-            // llenar v1 → 0 a (n1+1)
             for (int i = 0; i < n1; i++)
             {
-                v1[i] = rand.Next(0, n1 + 2); // +2 porque el límite superior no se incluye
+                v1[i] = rand.Next(0, n1 + 2);
             }
 
-            // llenar v2 → n2 a (n2*2)
             for (int i = 0; i < n2; i++)
             {
                 v2[i] = rand.Next(n2, (n2 * 2) + 1);
             }
 
-            // combinar
             for (int i = 0; i < n1; i++)
             {
                 combinado[i] = v1[i];
@@ -219,21 +216,18 @@ namespace _19.TallerVectores
                 combinado[n1 + i] = v2[i];
             }
 
-            // mostrar v1
             Console.WriteLine("\nVector 1:");
             for (int i = 0; i < n1; i++)
             {
                 Console.Write(v1[i] + " ");
             }
 
-            // mostrar v2
             Console.WriteLine("\nVector 2:");
             for (int i = 0; i < n2; i++)
             {
                 Console.Write(v2[i] + " ");
             }
 
-            // mostrar combinado
             Console.WriteLine("\nVector combinado:");
             for (int i = 0; i < combinado.Length; i++)
             {
@@ -246,19 +240,17 @@ namespace _19.TallerVectores
 
             /*string[] nombres = new string[10];
             int contador = 0;
+            char letra = ' ';
 
-            // Llenar el vector
             for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine("Ingrese un nombre:");
                 nombres[i] = Console.ReadLine();
             }
 
-            // Pedir letra
             Console.WriteLine("Ingrese una letra:");
-            char letra = Console.ReadLine()[0];
+            letra = Console.ReadLine()[0];
 
-            // Contar
             for (int i = 0; i < 10; i++)
             {
                 if (nombres[i][0] == letra || nombres[i][0] == letra + 32 || nombres[i][0] == letra - 32)
@@ -267,7 +259,6 @@ namespace _19.TallerVectores
                 }
             }
 
-            // Mostrar resultado
             Console.WriteLine("Cantidad de nombres que empiezan con esa letra: " + contador);*/
 
 
@@ -276,7 +267,6 @@ namespace _19.TallerVectores
 
             string[] nombres = new string[10];
 
-            // Llenar el vector
             for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine("Ingrese un nombre:");
@@ -285,7 +275,6 @@ namespace _19.TallerVectores
 
             Console.WriteLine("\nResultados:");
 
-            // Identificar repetidos y contar
             for (int i = 0; i < 10; i++)
             {
                 if (nombres[i] != null)
